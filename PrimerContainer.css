@@ -1,0 +1,40 @@
+/* Div */
+.container{
+    width: 600px;
+    max-width: 960px;
+    background-color: #f1f1f100;
+    height: 100px;
+    display: grid;
+    margin: 230px;
+    align-content: center;
+    z-index: 1;
+    position: absolute;
+}
+
+/* Titulo Parrafo */
+.Other{
+    margin: 20px;
+    font-family: 'Handlee', cursive;
+    color: #f1f1f1;
+    font-size: 3em;
+    max-width: 760px;
+    text-align: center;
+}
+
+/* Parrafo */
+.Text{
+    color: #fff;
+    font-family: 'Nova Slim', cursive;
+    text-align: center;
+    font-size: large;
+    letter-spacing: 1px;
+}
+
+.Text1{
+    color: #fff;
+    font-family: 'Nova Slim', cursive;
+    text-align: center;
+    font-size: large;
+    margin: 30px;
+    letter-spacing: 1px;
+}

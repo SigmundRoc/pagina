@@ -1,0 +1,32 @@
+.Carrousel{
+    background-color: #f1f1f100;
+    width: 597px;
+    max-width: 990px;
+    height: 400px;
+    margin: 410px;
+    position: absolute;
+    top: 0;
+}
+
+section{
+    display: flex;
+    width: 600px;
+    height: 430px;
+
+}
+
+section img{
+    width: 0px;
+    flex-grow: 1;
+    object-fit: cover;
+    opacity: .8;
+    transition: .5s ease;
+    border-radius: 10%;
+}
+
+section img:hover{
+    cursor: cell;
+    width: 300px;
+    opacity: 1;
+    filter: contrast(120%);
+}

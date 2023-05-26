@@ -1,0 +1,145 @@
+
+/* ARTEZZI */
+
+.Title{
+    font-family: 'Rubik Vinyl', cursive;
+    position: relative;
+    text-align: center;
+    margin-top: 50px;
+    color: #f1f1f1;
+    left: 330px;
+    transform: translate(-150%, -100%);
+    font-size: 3rem;
+}
+
+/* Settings of Menu */
+
+.navigation{
+    position: absolute;
+    width: 400px;
+    height: 60px;
+    background: #f1f1f100;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    margin-top: 90px;
+    flex-direction: column-reverse;
+}
+
+/* Icons and text */
+
+.navigation ul{
+    display: flex;
+    width: 350px;
+}
+
+.navigation ul li{
+    list-style: none;
+    position: relative;
+    width: 70px;
+    height: 60px;
+    z-index: 2;
+}
+
+.navigation ul li a{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    text-align: center;
+    font-weight: 500;
+}
+
+.navigation ul li a .icon{
+    position: relative;
+    display: block;
+    line-height: 65px;
+    font-size: 1.5em;
+    transition: 0.5s;
+    color: #ffffff;
+}
+
+.navigation ul li.active a .icon{
+    transform: translateY(-32px);
+    color: aqua;
+}
+
+.navigation ul li a .text{
+    position: absolute;
+    background: #f1f1f1;
+    color: black;
+    padding: 2px 7px;
+    border-radius: 12px;
+    font-weight: 400;
+    font-size: 0.75em;
+    letter-spacing: 0.05em;
+    transition: 0.5s;
+    opacity: 0;
+    transform: translateY(15px);
+    font-family: 'Caveat', cursive;
+}
+
+.navigation ul li.active a .text{
+    transform: translateY(-4px);
+    opacity: 1;
+}
+
+.indicator{
+    position: absolute;
+    top: -58%;
+    width: 70px;
+    height: 70px;
+    background: transparent;
+    border-radius: 60%;
+    z-index: 1;
+    transition: 0.5s;
+}
+
+/* Indicator Settings */
+
+.indicator::before{
+    content: 0;
+    position: absolute;
+    top: 5px;
+    left: -28px;
+    width: 30px;
+    height: 30px;
+    background: transparent;
+    border-radius: 50%;
+    box-shadow: 15px 18px #ffffff;
+}
+
+.indicator::after{
+    content: '';
+    position: absolute;
+    top: -10px;
+    right: 14px;
+    width: 10px;
+    height: 10px;
+    background: transparent;
+    border-radius: 50%;
+    box-shadow: -15px 18px #ffffff;
+}
+
+.navigation ul li:nth-child(1).active ~ .indicator{
+    transform: translateX(calc(70px * 0));
+}
+
+.navigation ul li:nth-child(2).active ~ .indicator{
+    transform: translateX(calc(70px * 1));
+}
+
+.navigation ul li:nth-child(3).active ~ .indicator{
+    transform: translateX(calc(70px * 2));
+}
+
+.navigation ul li:nth-child(4).active ~ .indicator{
+    transform: translateX(calc(70px * 3));
+}
+
+.navigation ul li:nth-child(5).active ~ .indicator{
+    transform: translateX(calc(70px * 4));
+}

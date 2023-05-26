@@ -1,0 +1,56 @@
+.Button{
+    display: flex;
+    height: 100px;
+    width: 200px;
+    justify-content: space-around;
+    position: relative;
+    margin-top: 1140px;
+    white-space: nowrap;
+    left: -110px;
+}
+
+
+/* Estilo de Letra */
+.btn{
+    position: absolute;
+    padding: 10px 40px;
+    text-decoration: none;
+    color: bisque;
+    letter-spacing: 10px;
+    z-index: 2;
+    font-family: 'Nova Slim', cursive;
+}
+
+.btn-1::after{
+    content: "";
+    position: absolute;
+    width: 200px;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background: linear-gradient(100deg, rgba(57,82,193,1) 21%, rgba(117,57,236,1) 41%, rgba(196,105,246,1) 74%, rgba(255,153,105,1) 100%);
+    background-size: 300%;
+    border-radius: 5px;
+    transition: all 0.6s ease;
+    z-index: -1;
+}
+
+
+.btn-1:hover::after{
+    background-position: 100%;
+    filter: blur(15px);
+}
+
+
+.btn-1::before{
+    content: "";
+    position: absolute;
+    width: 200px;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background: linear-gradient(100deg, rgba(255,255,255,1) 0%, rgba(196,105,246,1) 55%, rgba(255,153,105,1) 100%);
+    background-size: 300%;
+    border-radius: 5px;
+    z-index: -1;
+}

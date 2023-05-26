@@ -1,0 +1,127 @@
+
+<!DOCTYPE>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Test Menu</title>
+        <link rel="stylesheet" href="General.css">
+        <link rel="stylesheet" type="text/css" href="Menu.css">
+        <link rel="stylesheet" href="PrimerContainer.css">
+        <link rel="stylesheet" href="SegundoContainer.css">
+        <link rel="stylesheet" href="SingUp.css">
+        <link rel="stylesheet" href="LoginUp.css">
+        <link rel="stylesheet" href="Experiment.css">
+        <link rel="stylesheet" href="Carrousel.css">
+        <link href="https://fonts.googleapis.com/css2?family=Bungee+Hairline&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Rubik+Vinyl&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Marck+Script&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Nova+Slim&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Caveat&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Laila:wght@300&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Poiret+One&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Handlee&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <div class="navigation">
+            <h1 class="Title">ARTEZZI</h1>
+            <ul>
+                <li class="list active">
+                    <a href="#">
+                        <span class="icon">
+                            <ion-icon name="home-outline"></ion-icon>
+                        </span>
+                        <span class="text">Home</span>
+                    </a>
+                </li>
+                <li class="list">
+                    <a href="#">
+                        <span class="icon">
+                            <ion-icon name="earth-outline"></ion-icon>
+                        </span>
+                        <span class="text">Community</span>
+                    </a>
+                </li>
+                <li class="list">
+                    <a href="#">
+                        <span class="icon">
+                            <ion-icon name="color-palette-outline"></ion-icon>
+                        </span>
+                        <span class="text">Artists</span>
+                    </a>
+                </li>
+                <li class="list">
+                    <a href="#">
+                        <span class="icon">
+                            <ion-icon name="heart-circle-outline"></ion-icon>
+                        </span>
+                        <span class="text">Trending</span>
+                    </a>
+                </li>
+                <li class="list">
+                    <a href="#">
+                        <span class="icon">
+                            <ion-icon name="help-outline"></ion-icon>
+                        </span>
+                        <span class="text">News</span>
+                    </a>
+                </li>
+                <div class="indicator"></div>
+            </ul>
+        </div>
+        <script>
+        const list = document.querySelectorAll('.list');
+        function activeLink(){
+            list.forEach((item) =>
+            item.classList.remove('active'));    
+            this.classList.add('active')
+            }      
+            list.forEach((item) =>
+            item.addEventListener('click',activeLink));
+        </script>
+
+        <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+        <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+        <div class="container">
+            <h1 class="Other">The world of digital art</h1>
+            <p class="Text">Are you tired of seeing the same popular artworks everywhere? That's where our approach sets us apart!</p>
+            <p class="Text1">Immerse yourself in the ocean of colors, shapes, and emotions created by these talented digital artists. From vibrant illustrations to surreal compositions</p>
+        </div>
+
+        <div class="Carrousel">
+            <section class="img">
+                <img src="IMG/n-i-x-e-u-b-22.jpg" alt="">
+                <img src="IMG/svetlana-nurkaeva-nagmara-1500-3.jpg" alt="">
+                <img src="IMG/zeen-chin-11-copy.jpg" alt="">
+                <img src="IMG/sakimi-chan-diluc-03.jpg" alt="">
+            </section>
+        </div>
+
+        <div class="container2">
+            <h1 class="Other2">But it's not just about appreciation; we also want you to participate!</h1>
+            <p class="Text2">Join our creative community, interact with the artists, and share your opinions. Additionally, stay up-to-date with the latest news in the world of digital art and uncover the secrets behind the most innovative techniques.</p>
+            <h1 class="Other3">Contact Us</h1>
+        </div>
+        <div class="Button">
+            <a href="#" class="btn btn-1">Sing Up</a>
+        </div>
+
+        <div class="Button2">
+            <a href="#" class="btn btn-2">Login Up</a>
+        </div>
+
+        <section class="Bar">
+            <div></div>
+            <div></div>
+            <div></div>
+            <ul class="bar">
+                <li><a href="#"><ion-icon name="logo-facebook"></ion-icon></a></li>
+                <li><a href="#"><ion-icon name="logo-instagram"></ion-icon></a></li>
+                <li><a href="#"><ion-icon name="logo-twitter"></ion-icon></a></li>
+                <li><a href="#"><ion-icon name="logo-whatsapp"></ion-icon></a></li>
+            </ul>
+        </section>
+    </body>
+</html>

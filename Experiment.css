@@ -1,0 +1,53 @@
+.Bar{
+    position: absolute;
+    display: flex;
+    z-index: 2;
+    margin-top: 660px;
+    left: 126px;
+}
+
+.Bar li{
+    list-style: none;
+    position: relative;
+    margin: 10px;
+}
+
+.Bar li a{
+    position: relative;
+    width: 80px;
+    height: 80px;
+    display: inline-block;
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    border-right: 1px solid rgba(255, 255, 255, 0.2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: aliceblue;
+    font-size: 2em;
+    box-shadow: 0.5px 45px rgba(0, 0, 0, 0.1);
+    transition: 0.5s;
+    overflow: hidden;
+}
+
+.Bar li a:hover{
+    transform: translateY(-20px);
+}
+
+.Bar li a::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50px;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.5);
+    transform: skewX(45deg) translateX(150px);
+    transition: 0.5s;
+}
+
+.Bar li a:hover::before{
+    transform: skewX(45deg) translateX(-150px);
+}

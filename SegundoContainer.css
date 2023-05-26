@@ -1,0 +1,37 @@
+.container2{
+    width: 900px;
+    max-width: 960px;
+    background-color: #f1f1f100;
+    height: 300px;
+    margin: 870px;
+    position: absolute;
+}
+
+
+.Other2{
+    font-family: 'Handlee', cursive;
+    color: #f1f1f1;
+    font-size: 3em;
+    text-align: center;
+    margin: 10px;
+}
+
+.Text2{
+    color: #fff;
+    font-family: 'Nova Slim', cursive;
+    font-size: large;
+    text-align: center;
+    margin: 10px;
+    letter-spacing: 1px;
+}
+
+.Other3{
+    font-family: 'Handlee', cursive;
+    color: #f1f1f1;
+    font-size: 3em;
+    text-align: center;
+    margin: 140px;
+}
+
+
+
